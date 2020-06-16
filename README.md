@@ -21,5 +21,5 @@
 
 
 # Possível problema no npm install:
-- Favor rodar 'npm rebuild node-sass`
+- Favor rodar `npm rebuild node-sass`
 - Continuar os outros passos
