@@ -1,0 +1,19 @@
+.label {
+  display: inline-block;
+  padding: 4px 12px;
+  position: relative;
+  top: -1px;
+  font-size: 11px;
+  line-height: 11px;
+  @include bold();
+  .icon {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.label-yellow {
+  background: #F2C500;
+  color: #594900;
+  @include border-radius(4px);
+}

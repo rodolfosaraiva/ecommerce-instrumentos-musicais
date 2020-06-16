@@ -1,0 +1,168 @@
+input, textarea, button {
+	@include placeholder($black-40);
+	font-family: $global-font-family;
+}
+
+input, textarea {
+	display: block;
+	width: 100%;
+	padding: 12.5px 16px;
+	font-size: 15px;
+	border: 1px solid #b3b3b3;
+	margin: 0;
+	border-radius: 4px;
+	transition: border-color .2s;
+	@include border-radius(4px);
+	&.noresize {
+		resize: none;
+	}
+	&:focus {
+		border-color: $purple;
+		@include box-shadow(inset 0px 0px 0px 1px $purple);
+	}
+	&.input-small {
+		width: 120px;
+		padding: 7px 10px;
+		max-width: 100%;
+	}
+	&.input-medium {
+		width: 300px;
+		max-width: 100%;
+	}
+}
+
+
+button:disabled {
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+input:disabled, textarea:disabled {
+	background-color: #FAFAFA;
+}
+
+// Forms
+// -----
+.form {
+	.form-group {
+		margin: 0 0 22px 0;
+	}
+	.group-error {
+		input, textarea {
+			border-color: #E50F38 !important;
+			&:focus {
+				box-shadow: inset 0px 0px 0px 1px #E50F38 !important;
+			};
+		}
+		.error-block, .help-block {
+			color: #E50F38;
+		}
+	}	
+
+	.label-block {
+		display: block;
+		font-size: 15px;
+		color: $black-80;
+		margin-bottom: 7px;
+	}
+
+	.help-block {
+		margin-top: 8px;
+		font-size: 11px;
+	}
+}
+
+
+.el-select {
+	width: 100%;
+	
+	.el-icon-close, .el-icon-circle-close {
+		display: inline-block;
+		font-family: 'Font Awesome 5 Free';
+		font-style: normal;
+		font-weight: 900;		
+		&:before {
+			display: block;
+			content: "\f00d";
+		}
+	}
+	.el-input__icon {
+		line-height: 47px;
+		right: 15px;
+		color: $black-50 !important;
+		font-size: 18px !important;
+	}
+	.el-icon-circle-close {
+		line-height: 41px;
+		right: 0;
+	}
+
+	.el-select__input {
+		min-width: 45px !important;
+		border: 0 !important;
+		margin: 0 !important;
+		box-shadow: none !important;
+	}
+	.el-input__inner {
+		height: 45px;
+		line-height: 45px;
+		border: 1px solid #999;
+		&:focus {
+			border-color: $purple !important;
+		}
+	}
+	.el-input.is-focus {
+		.el-input__inner {
+			border-color: $purple !important;
+			@include box-shadow(inset 0px 0px 0px 1px $purple);
+		}
+	}
+}
+
+.el-icon-arrow-up {
+	position: relative;
+	right: 10px;
+	font-style: normal;
+	&.is-reverse {
+		&:before {
+			content: "\f106";
+		}
+	}
+	&:before {
+		font-family: 'Font Awesome 5 Free' !important;		
+    content: "\f107";
+    font-weight: 900;
+	}
+}
+.el-input__inner {
+	padding-right: 28px !important;
+}
+
+
+
+.btn-send {
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center -30px;
+	&.sending {
+		pointer-events: none;
+		text-indent: -99999px;
+		.dots {
+			display: block;
+		}
+	}  
+	&.dark {
+		.dot {
+			background-color: $black-70;
+		}
+	}
+
+	.dots {
+		display: none;
+		@include size(100%, 100%);
+		position: absolute;
+		top: 50%;
+		left: 0;
+		margin-top: -6px;		
+	}
+}

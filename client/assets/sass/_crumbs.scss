@@ -1,0 +1,29 @@
+.breadcrumbs {
+  li {
+    display: inline-block;
+    padding: 0 8px 8px 0;
+    vertical-align: middle;
+    text-transform: uppercase;
+    @include black(); 
+    span {
+      display: inline-block;
+    }
+    &.separator {
+      color: #CCCCCC;
+      &:before {
+        content: "/";
+      }
+    }
+    &.last {
+      color: $black-30 !important;
+    }
+    &:not(.last) {
+      &:after {
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+  a {
+    color: $black !important;
+  }
+}

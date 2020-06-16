@@ -1,0 +1,42 @@
+.owl-theme {
+  .owl-nav {
+    .owl-prev, .owl-next {
+      @include size(45px, 45px);
+      font-family: "Font Awesome 5 Free" !important;
+      font-weight: 900 !important;        
+      background: #FFF !important;
+      transition: all .2s;
+      @include border-radius(50%);
+      @include box-shadow(0 2px 1px 0 rgba(0, 0, 0, 0.1));
+      &.disabled {
+        pointer-events: none;
+      }
+      &:hover {
+        span {
+          color: $purple !important;
+        }
+      }
+      span {
+        font-size: 0;
+        color: $black-50;
+        &:before {
+          font-size: 17px;
+        }
+      }
+      &.owl-next {
+        span {
+          &:before {
+            content: "\f061";
+          }
+        }
+      }
+      &.owl-prev {
+        span {
+          &:before {
+            content: "\f060";
+          }
+        }         
+      }
+    }
+  }
+}

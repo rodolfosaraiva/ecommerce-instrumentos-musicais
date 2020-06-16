@@ -1,0 +1,126 @@
+
+// Parágrafos
+// ----------
+p { font-size: 16px; line-height: 20px; margin: 0 0 10px 0;}
+
+
+.light    { @include light(); }
+.regular  { @include regular(); }
+.italic   { @include italic(); }
+.medium   { @include medium(); }
+.bold     { @include bold(); }
+.black    { @include black(); }
+
+// Títulos
+// -------
+h1, h2, h3, h4, h5, h6 { @include regular();}
+
+
+h1, .f-h1 { font-size: 30px;}
+
+h2, .f-h2 { font-size: 25px; line-height: 30px;}
+
+h3, .f-h3 { font-size: 20px; line-height: 30px;}
+
+h4, .f-h4 { font-size: 18px; line-height: 23px;}
+
+h5, .f-h5 { font-size: 15px;}
+
+h6, .f-h6 { font-size: 11px;}
+
+.f1 { font-size: 65px; line-height: 60px;}
+.f2 { font-size: 60px; line-height: 65px;}
+
+.f3 { font-size: 55px; line-height: 65px;}
+
+.ls1 { letter-spacing: -1px;}
+.ls2 { letter-spacing: -2px;}
+.ls3 { letter-spacing: -3px;}
+
+.f9 {  font-size: 9px; }
+.f10 { font-size: 10px; }
+.f11 { font-size: 11px; }
+.f12 { font-size: 12px; }
+.f13 { font-size: 13px; }
+.f14 { font-size: 14px; }
+.f15 { font-size: 15px; }
+.f16 { font-size: 16px; }
+.f17 { font-size: 17px; }
+.f18 { font-size: 18px; }
+.f19 { font-size: 19px; }
+.f20 { font-size: 20px; }
+
+
+body {
+ // ZOOOMM 1
+  &.fontsize_1 { 
+    font-size: 17px;
+    // Parágrafos
+    // ----------
+    p { font-size: 18px; line-height: 21px;}
+
+    // Títulos
+    // -------
+    h1, .f-h1 { font-size: 32px; }
+    h2, .f-h2 { font-size: 27px; line-height: 32px;}
+    h3, .f-h3 { font-size: 22px; }
+    h4, .f-h4 { font-size: 20px; line-height: 25px;}
+    h5, .f-h5 { font-size: 17px;}
+
+    h6, .f-h6 { font-size: 12px;}
+
+    .f1 { font-size: 68px; line-height: 60px;}
+    .f2 { font-size: 63px; line-height: 65px;}
+
+    .f3 { font-size: 58px; line-height: 65px;}
+
+    .f9 {  font-size: 10px; }
+    .f10 { font-size: 11px; }
+    .f11 { font-size: 12px; }
+    .f12 { font-size: 13px; }
+    .f13 { font-size: 14px; }
+    .f14 { font-size: 15px; }
+    .f15 { font-size: 16px; }
+    .f16 { font-size: 17px; }
+    .f17 { font-size: 18px; }
+    .f18 { font-size: 19px; }
+    .f19 { font-size: 20px; }
+    .f20 { font-size: 21px; }
+  }
+
+  // ZOOOMM 2
+  &.fontsize_2 { 
+    font-size: 18px;
+    // Parágrafos
+    // ----------
+    p { font-size: 20px; line-height: 21px;}
+
+    // Títulos
+    // -------
+    h1, .f-h1 { font-size: 34px; }
+    h2, .f-h2 { font-size: 30px; line-height: 32px;}
+    h3, .f-h3 { font-size: 25px; }
+    h4, .f-h4 { font-size: 22px; line-height: 25px;}
+    h5, .f-h5 { font-size: 18px;}
+
+    h6, .f-h6 { font-size: 13px;}
+
+    .f1 { font-size: 70px; line-height: 60px;}
+    .f2 { font-size: 65px; line-height: 65px;}
+
+    .f3 { font-size: 60px; line-height: 65px;}
+
+    .f9 {  font-size: 11px; }
+    .f10 { font-size: 12px; }
+    .f11 { font-size: 13px; }
+    .f12 { font-size: 14px; }
+    .f13 { font-size: 15px; }
+    .f14 { font-size: 16px; }
+    .f15 { font-size: 17px; }
+    .f16 { font-size: 18px; }
+    .f17 { font-size: 19px; }
+    .f18 { font-size: 20px; }
+    .f19 { font-size: 21px; }
+    .f20 { font-size: 22px; }
+  }
+}

@@ -1,0 +1,43 @@
+// Colors
+$purple: #725BC2;
+$white: #FFF;
+$black: #1A1A1A;
+$purple-dark: #352667;
+$purple-light: #8369DF;
+$purple-light2: #b4a2f5;
+$yellow: #f2c500;
+$pink: #D66A9E;
+$pink2: #E55B9D;
+$green: #42C4AE;
+$red: #E64545;
+$green-whatsapp: #22BF5C;
+$global-font-family: 'Rubik', sans-serif;
+
+
+$black-10: darken(#FFF, 10%);
+$black-20: darken(#FFF, 20%);
+$black-30: darken(#FFF, 30%);
+$black-40: darken(#FFF, 40%);
+$black-50: darken(#FFF, 50%);
+$black-60: darken(#FFF, 60%);
+$black-70: darken(#FFF, 70%);
+$black-80: darken(#FFF, 80%);
+$black-90: darken(#FFF, 90%);
+
+.black-10 { color: $black-10 };
+.black-20 { color: $black-20 };
+.black-30 { color: $black-30 };
+.black-40 { color: $black-40 };
+.black-50 { color: $black-50 };
+.black-60 { color: $black-60 };
+.black-70 { color: $black-70 };
+.black-80 { color: $black-80 };
+.black-90 { color: $black-90 };
+.green { color: $green };
+.red { color: $red };
+.green-whatsapp { color: $green-whatsapp };
+
+.purple { color: $purple };
+.white { color: $white };
+.pink { color: $pink };
+.pink2 { color: $pink2 };

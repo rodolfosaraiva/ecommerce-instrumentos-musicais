@@ -1,0 +1,74 @@
+.btn {
+	display: inline-block;
+  border: 0;
+  cursor: pointer;
+  text-align: center;  
+  padding: 10px 25px;
+  font-size: 14px;
+  text-transform: none;
+  @include medium();
+  @include border-radius(5px);
+  &.disabled {
+    pointer-events: none !important;
+    @include opacity(0.5);
+  }
+}
+
+.btn-block {
+  width: 100%;
+  display: block;
+}
+
+.btn-medium {
+  padding: 14px 35px;
+  font-size: 15px;
+}
+.btn-large {
+  padding: 16px 20px;
+  font-size: 22px;
+}
+
+.btn-purple {
+	background: $purple;
+	color: #fff;
+	&:hover {
+		background: $purple-light;
+		color: #fff;
+	}
+}
+
+.btn-secundary {
+  background: $black-40;
+  color: #fff;
+  &:hover {
+    background: $black-60;
+    color: #fff;
+  }
+}
+
+.btn-green {
+  color: #FFF;
+  background: $green;
+  &:hover {
+    background: #31A16B;
+    color: #fff;
+  }
+}
+
+.btn-outline {
+  color: #FFF;
+  @include box-shadow(inset 0px 0px 0px 1px #FFF);
+  &:hover {
+    color: $purple;
+    background: #FFF;
+  }
+}
+
+.btn-outline-purple {
+  color: $purple;
+  @include box-shadow(inset 0px 0px 0px 1px $purple);
+  &:hover {
+    color: #FFF;
+    background: $purple;
+  }
+}
